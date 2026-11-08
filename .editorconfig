@@ -1,0 +1,7 @@
+root = true
+[*.cs]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+dotnet_sort_system_directives_first = true
+# Публичные методы PascalCase, приватные поля _camelCase; XML summary для API.

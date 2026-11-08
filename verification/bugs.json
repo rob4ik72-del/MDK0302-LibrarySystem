@@ -1,0 +1,34 @@
+[
+  {
+    "id": "BUG-001",
+    "severity": "Critical",
+    "title": "ZIP выходит за каталог",
+    "steps": "../escape.pdf",
+    "expected": "Отказ до записи",
+    "test": "ZipSlipLeavesNoFiles"
+  },
+  {
+    "id": "BUG-002",
+    "severity": "Critical",
+    "title": "Произвольные байты сохраняются как книга",
+    "steps": "MZ под видом PDF",
+    "expected": "400",
+    "test": "SpoofedPdfRejected"
+  },
+  {
+    "id": "BUG-003",
+    "severity": "Major",
+    "title": "Reader допускается к записи",
+    "steps": "Reader + корректный PDF",
+    "expected": "403",
+    "test": "ReaderCannotUpload"
+  },
+  {
+    "id": "BUG-004",
+    "severity": "Minor",
+    "title": "Одинаковая строка error для разных отказов",
+    "steps": "Пустой файл и неверная роль",
+    "expected": "Различимые HTTP-статусы",
+    "test": "EmptyFileRejected"
+  }
+]

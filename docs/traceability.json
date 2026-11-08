@@ -1,0 +1,52 @@
+[
+  {
+    "id": "FR-01",
+    "requirement": "Librarian загружает PDF, EPUB и ZIP; 201, Quarantined",
+    "tests": "LibrarianUploadsPdfToQuarantine; LibrarianUploadsEpub; SafeZipCreatesTwoBooks"
+  },
+  {
+    "id": "FR-02",
+    "requirement": "Reader получает 403; нет / неверный токен — 401",
+    "tests": "ReaderCannotUpload; MissingTokenRejected; InvalidTokenRejected"
+  },
+  {
+    "id": "FR-03",
+    "requirement": "Небезопасный архив не оставляет файлов",
+    "tests": "ZipSlipLeavesNoFiles; MixedZipSavesNothing; SymbolicLinkRejected"
+  },
+  {
+    "id": "FR-04",
+    "requirement": "Проверка формата и структуры независимо от MIME",
+    "tests": "SpoofedPdfRejected; ExecutableRejected; EpubWithoutMimetypeRejected; EpubDtdRejected; DamagedZipRejected"
+  },
+  {
+    "id": "FR-05",
+    "requirement": "Размеры, количество записей и защита от распаковки",
+    "tests": "EmptyFileRejected; ExactOneMebibyteAccepted; OneByteOverBookLimitRejected; TwelveEntriesAccepted; ThirteenEntriesRejected; CompressionBombRejected; StreamLimitCountsActualBytes"
+  },
+  {
+    "id": "FR-06",
+    "requirement": "3 загрузки в минуту на пользователя, затем 429",
+    "tests": "FourthUploadRateLimited"
+  },
+  {
+    "id": "FR-07",
+    "requirement": "Серверное имя и параметризация поиска EF Core",
+    "tests": "LibrarianUploadsPdfToQuarantine; SqlLikeQueryRemainsData"
+  },
+  {
+    "id": "FR-08",
+    "requirement": "Каталог скрывает чужой карантин; выдача только Published",
+    "tests": "OtherLibrarianCannotSeeQuarantine; QuarantineCannotBeDownloaded; ReaderDownloadsPublishedSample"
+  },
+  {
+    "id": "FR-09",
+    "requirement": "Отказы заносятся в журнал без токена",
+    "tests": "RejectedUploadIsAuditedWithoutToken"
+  },
+  {
+    "id": "FR-10",
+    "requirement": "Нет путей и stack trace в ответе, нет lab в Production",
+    "tests": "InternalFailureDoesNotLeakPathOrStack; ProductionHidesLabSession"
+  }
+]

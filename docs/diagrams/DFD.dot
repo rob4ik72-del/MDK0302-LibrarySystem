@@ -1,0 +1,15 @@
+digraph DFD {
+graph [rankdir=TB,bgcolor=white,fontname="DejaVu Sans",nodesep=.4,ranksep=.5,pad=.2];
+node [fontname="DejaVu Sans",fontsize=15,penwidth=1.3];edge [fontname="DejaVu Sans",fontsize=14];
+E1 [shape=box,label="E1 Читатель / библиотекарь\nБраузер"];
+subgraph cluster_api {label="Граница доверия сервера API";style=dashed;color=gray;
+P1 [shape=circle,label="P1\nПроверка\nprincipal"];P2 [shape=circle,label="P2\nПриём\nкниги"];
+P3 [shape=circle,label="P3\nКаталог\nи выдача"];P4 [shape=circle,label="P4\nАудит"];
+{rank=same;P2;P3;}}
+D1 [shape=plain,label=<<TABLE BORDER="0" CELLBORDER="0"><TR><TD BORDER="1" SIDES="TB" CELLPADDING="10">D1 SQLite<BR/>Метаданные</TD></TR></TABLE>>];
+D2 [shape=plain,label=<<TABLE BORDER="0" CELLBORDER="0"><TR><TD BORDER="1" SIDES="TB" CELLPADDING="10">D2 Файлы<BR/>Карантин / образец</TD></TR></TABLE>>];
+D3 [shape=plain,label=<<TABLE BORDER="0" CELLBORDER="0"><TR><TD BORDER="1" SIDES="TB" CELLPADDING="10">D3 Журнал JSONL</TD></TR></TABLE>>];
+E1 -> P1 [label="F1"];P1 -> E1 [label="F2",constraint=false];P1 -> P2 [label="F3"];P1 -> P3 [label="F4"];
+P2 -> D1 [label="F5"];P2 -> D2 [label="F6"];D1 -> P3 [label="F7",constraint=false];D2 -> P3 [label="F8",constraint=false];
+P3 -> E1 [label="F9",constraint=false];P2 -> E1 [label="F10",constraint=false];P1 -> P4 [label="F11"];P2 -> P4 [label="F12"];P4 -> D3 [label="F13"];
+{rank=same;D1;D2;}}

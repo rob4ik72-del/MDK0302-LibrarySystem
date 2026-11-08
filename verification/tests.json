@@ -1,0 +1,243 @@
+{
+  "total": 47,
+  "passed": 47,
+  "failed": 0,
+  "skipped": 0,
+  "tests": [
+    {
+      "name": "Library.Tests.PolicyTests.CompressionBombRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0050500"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.DamagedZipRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0166529"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.EpubDtdRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0017444"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.EpubWithoutMimetypeRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0011434"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.PathRules(name: \"../a.pdf\", expected: False)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0000020"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.PathRules(name: \"a.pdf.\", expected: False)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0000019"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.PathRules(name: \"a//b.pdf\", expected: False)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0000108"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.PathRules(name: \"book.pdf\", expected: True)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0003000"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.PathRules(name: \"books/a.epub\", expected: True)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0006346"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.PathRules(name: \"C:\\\\a.pdf\", expected: False)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0000013"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.PathRules(name: \"COM9.pdf\", expected: False)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0000051"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.PathRules(name: \"LPT3.pdf\", expected: False)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0000020"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.StreamLimitCountsActualBytes",
+      "outcome": "Passed",
+      "duration": "00:00:00.0018446"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.SymbolicLinkRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0014937"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.ThirteenEntriesRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0009085"
+    },
+    {
+      "name": "Library.Tests.PolicyTests.TwelveEntriesAccepted",
+      "outcome": "Passed",
+      "duration": "00:00:00.0052141"
+    },
+    {
+      "name": "Library.Tests.QualityTests.DocumentedControllerPassesProjectAudit",
+      "outcome": "Passed",
+      "duration": "00:00:00.0454767"
+    },
+    {
+      "name": "Library.Tests.QualityTests.IfAndLogicalAndGiveComplexityThree",
+      "outcome": "Passed",
+      "duration": "00:00:00.0867098"
+    },
+    {
+      "name": "Library.Tests.QualityTests.LegacyHasPathAndRoleFindings",
+      "outcome": "Passed",
+      "duration": "00:00:00.0096392"
+    },
+    {
+      "name": "Library.Tests.QualityTests.RefactoredMethodHasLowerComplexityAndHigherMi",
+      "outcome": "Passed",
+      "duration": "00:00:00.0078304"
+    },
+    {
+      "name": "Library.Tests.UploadTests.DuplicateNamesRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0789483"
+    },
+    {
+      "name": "Library.Tests.UploadTests.EmptyFileRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0427446"
+    },
+    {
+      "name": "Library.Tests.UploadTests.ExactOneMebibyteAccepted",
+      "outcome": "Passed",
+      "duration": "00:00:00.0695048"
+    },
+    {
+      "name": "Library.Tests.UploadTests.ExecutableRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0598005"
+    },
+    {
+      "name": "Library.Tests.UploadTests.FourthUploadRateLimited",
+      "outcome": "Passed",
+      "duration": "00:00:00.0709983"
+    },
+    {
+      "name": "Library.Tests.UploadTests.InternalFailureDoesNotLeakPathOrStack",
+      "outcome": "Passed",
+      "duration": "00:00:00.0494466"
+    },
+    {
+      "name": "Library.Tests.UploadTests.InvalidTokenRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0353271"
+    },
+    {
+      "name": "Library.Tests.UploadTests.LibrarianUploadsEpub",
+      "outcome": "Passed",
+      "duration": "00:00:00.0425907"
+    },
+    {
+      "name": "Library.Tests.UploadTests.LibrarianUploadsPdfToQuarantine",
+      "outcome": "Passed",
+      "duration": "00:00:00.0420726"
+    },
+    {
+      "name": "Library.Tests.UploadTests.LongTitleRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0519226"
+    },
+    {
+      "name": "Library.Tests.UploadTests.MissingTokenRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0386190"
+    },
+    {
+      "name": "Library.Tests.UploadTests.MixedZipSavesNothing",
+      "outcome": "Passed",
+      "duration": "00:00:00.0611374"
+    },
+    {
+      "name": "Library.Tests.UploadTests.OneByteOverBookLimitRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.1451548"
+    },
+    {
+      "name": "Library.Tests.UploadTests.OtherLibrarianCannotSeeQuarantine",
+      "outcome": "Passed",
+      "duration": "00:00:00.0515445"
+    },
+    {
+      "name": "Library.Tests.UploadTests.ProductionHidesLabSession",
+      "outcome": "Passed",
+      "duration": "00:00:00.0279615"
+    },
+    {
+      "name": "Library.Tests.UploadTests.QuarantineCannotBeDownloaded",
+      "outcome": "Passed",
+      "duration": "00:00:00.0656949"
+    },
+    {
+      "name": "Library.Tests.UploadTests.ReaderCannotUpload",
+      "outcome": "Passed",
+      "duration": "00:00:00.0351237"
+    },
+    {
+      "name": "Library.Tests.UploadTests.ReaderDownloadsPublishedSample",
+      "outcome": "Passed",
+      "duration": "00:00:00.0655853"
+    },
+    {
+      "name": "Library.Tests.UploadTests.RejectedUploadIsAuditedWithoutToken",
+      "outcome": "Passed",
+      "duration": "00:00:00.9195368"
+    },
+    {
+      "name": "Library.Tests.UploadTests.SafeZipCreatesTwoBooks",
+      "outcome": "Passed",
+      "duration": "00:00:00.0520501"
+    },
+    {
+      "name": "Library.Tests.UploadTests.SpoofedPdfRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0427719"
+    },
+    {
+      "name": "Library.Tests.UploadTests.SqlLikeQueryRemainsData",
+      "outcome": "Passed",
+      "duration": "00:00:00.1469306"
+    },
+    {
+      "name": "Library.Tests.UploadTests.ZipSlipLeavesNoFiles(path: \"../escape.pdf\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0370858"
+    },
+    {
+      "name": "Library.Tests.UploadTests.ZipSlipLeavesNoFiles(path: \"..\\\\escape.pdf\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0326562"
+    },
+    {
+      "name": "Library.Tests.UploadTests.ZipSlipLeavesNoFiles(path: \"/absolute.pdf\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0318556"
+    },
+    {
+      "name": "Library.Tests.UploadTests.ZipSlipLeavesNoFiles(path: \"a/../../escape.pdf\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0548099"
+    },
+    {
+      "name": "Library.Tests.UploadTests.ZipSlipLeavesNoFiles(path: \"C:\\\\escape.pdf\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0356962"
+    }
+  ]
+}

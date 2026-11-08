@@ -1,0 +1,7 @@
+﻿"category";"threat";"node";"owasp";"control"
+"S · Spoofing";"Подмена роли библиотекаря";"P1";"A07:2025 Authentication Failures";"Серверный principal и случайный токен"
+"T · Tampering";"Перезапись файла через ZIP";"P2, D2";"A01:2025 Broken Access Control";"Проверка пути, UUID и приватный карантин"
+"R · Repudiation";"Отрицание запрещённой загрузки";"P4, D3";"A09:2025 Security Logging and Alerting Failures";"Журнал requestId, actor, status без токенов"
+"I · Information Disclosure";"Чтение чужого карантина";"P3, D1";"A01:2025 Broken Access Control";"Фильтр Published / Owner, нет прямых путей"
+"D · Denial of Service";"ZIP-бомба и частые загрузки";"P2";"A06:2025 Insecure Design";"Размеры, сжатие, число записей и Rate Limiting"
+"E · Elevation of Privilege";"Reader выполняет запись";"P1, P2";"A01:2025 Broken Access Control";"Authorize LibrarianOnly и отрицательный тест"

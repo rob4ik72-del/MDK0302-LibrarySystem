@@ -1,0 +1,5 @@
+﻿"id";"severity";"title";"steps";"expected";"test"
+"BUG-001";"Critical";"ZIP выходит за каталог";"../escape.pdf";"Отказ до записи";"ZipSlipLeavesNoFiles"
+"BUG-002";"Critical";"Произвольные байты сохраняются как книга";"MZ под видом PDF";"400";"SpoofedPdfRejected"
+"BUG-003";"Major";"Reader допускается к записи";"Reader + корректный PDF";"403";"ReaderCannotUpload"
+"BUG-004";"Minor";"Одинаковая строка error для разных отказов";"Пустой файл и неверная роль";"Различимые HTTP-статусы";"EmptyFileRejected"

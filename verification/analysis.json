@@ -1,0 +1,110 @@
+{
+  "before": {
+    "name": "LegacyUploadController",
+    "methods": [
+      {
+        "name": "upload",
+        "lines": 21,
+        "complexity": 6,
+        "volume": 788.47,
+        "mi": 50.07
+      },
+      {
+        "name": "count",
+        "lines": 1,
+        "complexity": 1,
+        "volume": 27,
+        "mi": 89.84
+      }
+    ],
+    "coupling": 2,
+    "lcom1": 0
+  },
+  "after": {
+    "name": "UploadController",
+    "methods": [
+      {
+        "name": "Upload",
+        "lines": 6,
+        "complexity": 1,
+        "volume": 375.08,
+        "mi": 64.87
+      }
+    ],
+    "coupling": 3,
+    "lcom1": 0
+  },
+  "catalog": {
+    "name": "BooksController",
+    "methods": [
+      {
+        "name": "Get",
+        "lines": 8,
+        "complexity": 5,
+        "volume": 709.05,
+        "mi": 59.67
+      },
+      {
+        "name": "Download",
+        "lines": 7,
+        "complexity": 3,
+        "volume": 385.74,
+        "mi": 63.05
+      }
+    ],
+    "coupling": 3,
+    "lcom1": 0
+  },
+  "beforeAudit": [
+    {
+      "rule": "AUD-01",
+      "location": "upload",
+      "status": "Не соответствует",
+      "description": "Имя метода не PascalCase"
+    },
+    {
+      "rule": "AUD-02",
+      "location": "upload",
+      "status": "Требует доработки",
+      "description": "Нет XML summary"
+    },
+    {
+      "rule": "AUD-01",
+      "location": "count",
+      "status": "Не соответствует",
+      "description": "Имя метода не PascalCase"
+    },
+    {
+      "rule": "AUD-02",
+      "location": "count",
+      "status": "Требует доработки",
+      "description": "Нет XML summary"
+    },
+    {
+      "rule": "AUD-04",
+      "location": "ZIP",
+      "status": "Не соответствует",
+      "description": "Непроверенный путь"
+    },
+    {
+      "rule": "AUD-05",
+      "location": "role",
+      "status": "Не соответствует",
+      "description": "Reader допущен к записи"
+    },
+    {
+      "rule": "AUD-06",
+      "location": "Root",
+      "status": "Не соответствует",
+      "description": "Приватное поле не _camelCase"
+    },
+    {
+      "rule": "AUD-07",
+      "location": "Controller",
+      "status": "Не соответствует",
+      "description": "Нет серверной политики"
+    }
+  ],
+  "afterAudit": [],
+  "catalogAudit": []
+}
