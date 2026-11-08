@@ -1,0 +1,22 @@
+name: Проверки CSharp
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '8.0.x'
+      - run: dotnet restore LibrarySystem.sln
+      - run: dotnet build LibrarySystem.sln --no-restore
+      - run: dotnet test tests/Library.Tests --no-build --logger "trx;LogFileName=library-tests.trx" --results-directory verification
+      - run: dotnet run --project src/Library.Tools --no-build -- all
+      - run: dotnet run --project src/Library.Tools --no-build -- parse-tests verification/library-tests.trx
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification
+          path: verification/
