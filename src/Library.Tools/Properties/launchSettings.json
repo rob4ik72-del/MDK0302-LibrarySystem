@@ -1,0 +1,32 @@
+{
+  "profiles": {
+    "ПР 01 — Стандарты": {
+      "commandName": "Project",
+      "commandLineArgs": "standards"
+    },
+    "ПР 02 — Гармонизация": {
+      "commandName": "Project",
+      "commandLineArgs": "harmonization"
+    },
+    "ПР 03 — Аудит": {
+      "commandName": "Project",
+      "commandLineArgs": "audit"
+    },
+    "ПР 04 — Метрики": {
+      "commandName": "Project",
+      "commandLineArgs": "metrics"
+    },
+    "ПР 05 — Профиль качества": {
+      "commandName": "Project",
+      "commandLineArgs": "quality"
+    },
+    "ПР 07 — Матрица STRIDE": {
+      "commandName": "Project",
+      "commandLineArgs": "threats"
+    },
+    "ПР 08 — Проверки API": {
+      "commandName": "Project",
+      "commandLineArgs": "api-checks http://127.0.0.1:5352"
+    }
+  }
+}

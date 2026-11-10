@@ -14,11 +14,15 @@ public static class LabEndpoints
         env.IsDevelopment() && c.Connection.RemoteIpAddress is { } ip && IPAddress.IsLoopback(ip);
     public static void Map(WebApplication app)
     {
+        string Root() => app.Configuration["LabContentRoot"] ?? ProjectRoot();
         app.MapGet("/", (HttpContext c, IWebHostEnvironment env) => Allowed(c, env)
-            ? Results.Content(File.ReadAllText(Path.Combine(ProjectRoot(), "web/index.html")), "text/html; charset=utf-8") : Results.NotFound());
+            ? Results.Content(File.ReadAllText(Path.Combine(Root(), "web/index.html")), "text/html; charset=utf-8") : Results.NotFound());
+        app.MapGet("/lab/diagram/dfd", (HttpContext c, IWebHostEnvironment env) =>
+            Allowed(c, env) ? Results.File(Path.Combine(Root(), "docs", "diagrams", "DFD.svg"),
+                "image/svg+xml") : Results.NotFound());
         app.MapGet("/lab/data/{name}", (string name, HttpContext c, IWebHostEnvironment env) => {
             if (!Allowed(c, env) || !new[] { "standards", "harmonization", "quality", "threats", "analysis", "tests" }.Contains(name)) return Results.NotFound();
-            string path = Path.Combine(ProjectRoot(), name is "analysis" or "tests" ? "verification" : "artifacts", name + ".json");
+            string path = Path.Combine(Root(), name is "analysis" or "tests" ? "verification" : "artifacts", name + ".json");
             return File.Exists(path) ? Results.Content(File.ReadAllText(path), "application/json") : Results.Ok(new { status = "Сначала выполните Run_Tests.cmd" });
         });
         app.MapGet("/lab/session/{role}", (string role, HttpContext c, IWebHostEnvironment env, TokenRegistry tokens) => {
