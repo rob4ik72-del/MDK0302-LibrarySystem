@@ -3,7 +3,7 @@
     "Library.Api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": false,
+      "launchBrowser": true,
       "applicationUrl": "http://127.0.0.1:5352",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
