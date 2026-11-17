@@ -1,117 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="762" viewBox="0 0 1280 762">
-<defs>
-<marker id="arrow" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto">
-<path d="M0 0L8 3.5L0 7Z" fill="#273443"/>
-</marker>
-</defs>
-<rect width="1280" height="762" fill="white"/>
-<rect x="25" y="164" width="1230" height="580" rx="12" fill="#fbfcfd" stroke="#566474" stroke-width="2" stroke-dasharray="10 8"/>
-<text x="91" y="201" text-anchor="start" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="91" dy="0">Граница доверия API</tspan>
-</text>
-<rect x="410" y="20" width="460" height="78" rx="0" fill="#fff" stroke="#273443" stroke-width="3"/>
-<text x="640.0" y="68.0" text-anchor="middle" font-family="DejaVu Sans" font-size="28" fill="#17212b">
-<tspan x="640.0" dy="0">E1 Браузер пользователя</tspan>
-</text>
-<rect x="460" y="226" width="360" height="84" rx="19" fill="#fff" stroke="#273443" stroke-width="3"/>
-<text x="640.0" y="277.0" text-anchor="middle" font-family="DejaVu Sans" font-size="28" fill="#17212b">
-<tspan x="640.0" dy="0">P1 Проверка доступа</tspan>
-</text>
-<rect x="127" y="398" width="300" height="94" rx="19" fill="#fff" stroke="#273443" stroke-width="3"/>
-<text x="277.0" y="454.0" text-anchor="middle" font-family="DejaVu Sans" font-size="28" fill="#17212b">
-<tspan x="277.0" dy="0">P2 Приём книги</tspan>
-</text>
-<rect x="494" y="444" width="292" height="90" rx="19" fill="#fff" stroke="#273443" stroke-width="3"/>
-<text x="640.0" y="498.0" text-anchor="middle" font-family="DejaVu Sans" font-size="28" fill="#17212b">
-<tspan x="640.0" dy="0">P4 Аудит загрузки</tspan>
-</text>
-<rect x="857" y="398" width="292" height="94" rx="19" fill="#fff" stroke="#273443" stroke-width="3"/>
-<text x="1003.0" y="440.0" text-anchor="middle" font-family="DejaVu Sans" font-size="28" fill="#17212b">
-<tspan x="1003.0" dy="0">P3 Каталог</tspan>
-<tspan x="1003.0" dy="32.199999999999996">и выдача</tspan>
-</text>
-<path d="M81 620h285m-285 90h285" fill="none" stroke="#273443" stroke-width="3"/>
-<text x="223.5" y="659" text-anchor="middle" font-family="DejaVu Sans" font-size="24" fill="#17212b">
-<tspan x="223.5" dy="0">D2 Файлы</tspan>
-<tspan x="223.5" dy="27.599999999999998">в карантине</tspan>
-</text>
-<path d="M402 620h220m-220 90h220" fill="none" stroke="#273443" stroke-width="3"/>
-<text x="512.0" y="659" text-anchor="middle" font-family="DejaVu Sans" font-size="24" fill="#17212b">
-<tspan x="512.0" dy="0">D3 Журнал JSONL</tspan>
-</text>
-<path d="M665 620h215m-215 90h215" fill="none" stroke="#273443" stroke-width="3"/>
-<text x="772.5" y="659" text-anchor="middle" font-family="DejaVu Sans" font-size="24" fill="#17212b">
-<tspan x="772.5" dy="0">D1 Метаданные</tspan>
-<tspan x="772.5" dy="27.599999999999998">SQLite</tspan>
-</text>
-<path d="M923 620h273m-273 90h273" fill="none" stroke="#273443" stroke-width="3"/>
-<text x="1059.5" y="659" text-anchor="middle" font-family="DejaVu Sans" font-size="24" fill="#17212b">
-<tspan x="1059.5" dy="0">D4 Опубликованные</tspan>
-<tspan x="1059.5" dy="27.599999999999998">файлы</tspan>
-</text>
-<path d="M585 98V226" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="520" y="134" width="56" height="29" rx="3" fill="white"/>
-<text x="548" y="157" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="548" dy="0">F1</tspan>
-</text>
-<path d="M695 226V98" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="704" y="134" width="56" height="29" rx="3" fill="white"/>
-<text x="732" y="157" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="732" dy="0">F2</tspan>
-</text>
-<path d="M460 273H294V398" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="317" y="243" width="56" height="29" rx="3" fill="white"/>
-<text x="345" y="266" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="345" dy="0">F3</tspan>
-</text>
-<path d="M820 273H994V398" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="906" y="243" width="56" height="29" rx="3" fill="white"/>
-<text x="934" y="266" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="934" dy="0">F4</tspan>
-</text>
-<path d="M127 443H64V60H410" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="79" y="315" width="56" height="29" rx="3" fill="white"/>
-<text x="107" y="338" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="107" dy="0">F5</tspan>
-</text>
-<path d="M1149 443H1213V60H870" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="1142" y="315" width="56" height="29" rx="3" fill="white"/>
-<text x="1170" y="338" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="1170" dy="0">F6</tspan>
-</text>
-<path d="M220 492V620" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="156" y="544" width="56" height="29" rx="3" fill="white"/>
-<text x="184" y="567" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="184" dy="0">F7</tspan>
-</text>
-<path d="M382 492V733H718V710" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="320" y="570" width="56" height="29" rx="3" fill="white"/>
-<text x="348" y="593" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="348" dy="0">F8</tspan>
-</text>
-<path d="M427 473H494" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="432" y="437" width="56" height="29" rx="3" fill="white"/>
-<text x="460" y="460" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="460" dy="0">F9</tspan>
-</text>
-<path d="M640 310V444" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="648" y="347" width="56" height="29" rx="3" fill="white"/>
-<text x="676" y="370" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="676" dy="0">F10</tspan>
-</text>
-<path d="M558 534V620" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="487" y="553" width="56" height="29" rx="3" fill="white"/>
-<text x="515" y="576" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="515" dy="0">F11</tspan>
-</text>
-<path d="M791 620V555H916V492" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="830" y="525" width="56" height="29" rx="3" fill="white"/>
-<text x="858" y="548" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="858" dy="0">F12</tspan>
-</text>
-<path d="M1043 620V492" fill="none" stroke="#273443" stroke-width="2.8" marker-end="url(#arrow)"/>
-<rect x="1052" y="540" width="56" height="29" rx="3" fill="white"/>
-<text x="1080" y="563" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#17212b">
-<tspan x="1080" dy="0">F13</tspan>
-</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="203mm" viewBox="0 0 1450 1400">
+<defs><marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,5 L0,10" fill="none" stroke="black" stroke-width="1.8"/></marker></defs>
+<rect width="1450" height="1400" fill="white"/>
+<rect x="70" y="200" width="1290" height="1080" fill="none" stroke="black" stroke-width="2" stroke-dasharray="12 8"/>
+<polygon points="530,40 900,40 870,140 500,140" fill="white" stroke="black" stroke-width="2.5"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="26" fill="black" text-anchor="middle">
+<text x="700" y="83">E1 Браузер пользователя</text>
+<text x="700" y="113">Запросы и ответы</text>
+</g>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="start">
+<text x="90" y="237">Граница доверия серверной части API</text>
+</g>
+<rect x="520" y="280" width="360" height="100" fill="white" stroke="black" stroke-width="2.5"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="26" fill="black" text-anchor="middle">
+<text x="700.0" y="324.0">P1 Проверка доступа</text>
+<text x="700.0" y="354.0">Токен и политика роли</text>
+</g>
+<rect x="170" y="550" width="320" height="110" fill="white" stroke="black" stroke-width="2.5"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="26" fill="black" text-anchor="middle">
+<text x="330.0" y="599.0">P2 Приём книги</text>
+<text x="330.0" y="629.0">Проверка и сохранение</text>
+</g>
+<rect x="940" y="550" width="320" height="110" fill="white" stroke="black" stroke-width="2.5"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="26" fill="black" text-anchor="middle">
+<text x="1100.0" y="599.0">P3 Каталог и выдача</text>
+<text x="1100.0" y="629.0">Контроль Published</text>
+</g>
+<rect x="535" y="760" width="330" height="110" fill="white" stroke="black" stroke-width="2.5"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="26" fill="black" text-anchor="middle">
+<text x="700.0" y="809.0">P4 Аудит загрузки</text>
+<text x="700.0" y="839.0">HTTP middleware</text>
+</g>
+<path d="M120,965 A130.0,15 0 0 1 380,965 V1035 A130.0,15 0 0 1 120,1035 Z" fill="white" stroke="black" stroke-width="2.5"/>
+<ellipse cx="250.0" cy="965" rx="130.0" ry="15" fill="white" stroke="black" stroke-width="2.5"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="250.0" y="1007.0">D2 Файлы</text>
+<text x="250.0" y="1037.0">в карантине</text>
+</g>
+<path d="M490,1065 A130.0,15 0 0 1 750,1065 V1135 A130.0,15 0 0 1 490,1135 Z" fill="white" stroke="black" stroke-width="2.5"/>
+<ellipse cx="620.0" cy="1065" rx="130.0" ry="15" fill="white" stroke="black" stroke-width="2.5"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="620.0" y="1107.0">D3 Журнал JSONL</text>
+</g>
+<path d="M780,1065 A120.0,15 0 0 1 1020,1065 V1135 A120.0,15 0 0 1 780,1135 Z" fill="white" stroke="black" stroke-width="2.5"/>
+<ellipse cx="900.0" cy="1065" rx="120.0" ry="15" fill="white" stroke="black" stroke-width="2.5"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="900.0" y="1107.0">D1 Метаданные</text>
+<text x="900.0" y="1137.0">SQLite</text>
+</g>
+<path d="M1070,965 A130.0,15 0 0 1 1330,965 V1035 A130.0,15 0 0 1 1070,1035 Z" fill="white" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1200.0" cy="965" rx="130.0" ry="15" fill="white" stroke="black" stroke-width="2.5"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="1200.0" y="1007.0">D4 Опубликованные</text>
+<text x="1200.0" y="1037.0">файлы</text>
+</g>
+<polyline id="F1" points="640,140 640,280" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="610" y="220">F1</text>
+</g>
+<polyline id="F2" points="760,280 760,140" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="790" y="220">F2</text>
+</g>
+<polyline id="F3" points="520,330 330,330 330,550" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="420" y="315">F3</text>
+</g>
+<polyline id="F4" points="880,330 1100,330 1100,550" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="990" y="315">F4</text>
+</g>
+<polyline id="F5" points="170,600 30,600 30,90 515,90" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="50" y="470">F5</text>
+</g>
+<polyline id="F6" points="1260,600 1400,600 1400,90 885,90" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="1380" y="470">F6</text>
+</g>
+<polyline id="F7" points="250,660 250,950" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="275" y="840">F7</text>
+</g>
+<polyline id="F8" points="420,660 420,1210 900,1210 900,1150" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="455" y="1010">F8</text>
+</g>
+<polyline id="F9" points="490,605 700,605 700,760" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="590" y="590">F9</text>
+</g>
+<polyline id="F10" points="700,380 700,460 850,460 850,760" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="890" y="520">F10</text>
+</g>
+<polyline id="F11" points="620,870 620,1050" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="655" y="985">F11</text>
+</g>
+<polyline id="F12" points="900,1050 900,605 940,605" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="940" y="900">F12</text>
+</g>
+<polyline id="F13" points="1200,950 1200,660" fill="none" stroke="black" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g font-family="Liberation Serif,Times New Roman" font-size="24" fill="black" text-anchor="middle">
+<text x="1238" y="840">F13</text>
+</g>
+<g font-family="Liberation Serif,Times New Roman" font-size="23" fill="black" text-anchor="middle">
+<text x="710" y="1322">F1–F13 — именованные потоки данных, расшифровка приведена в таблице 1</text>
+</g>
+<g font-family="Liberation Serif,Times New Roman" font-size="22" fill="black" text-anchor="middle">
+<text x="710" y="1357">Ортогональные линии, повороты 90°. Символы обработки, данных и хранилищ — ГОСТ 19.701–90</text>
+</g>
 </svg>
